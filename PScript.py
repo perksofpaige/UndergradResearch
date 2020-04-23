@@ -56,7 +56,6 @@ def main():
 
     for password in passwords:
         if password_check(password, minimum_requirement):
-            # TODO
             acceptable_passwords.append(password)
 
     length = len(acceptable_passwords)
