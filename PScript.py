@@ -2,7 +2,7 @@ def password_check(password, minimum_requirement):
     SpecialSym = ['!', '$', '_', '@', '#', '%', '^', '&', '*', '(', ')']
     count = 0
 
-    # DO ALL CHECKS
+    # CHECKING MINIMUM REQUIREMENTS
     if len(password) < 8:
         pass
     else:
@@ -34,7 +34,7 @@ def password_check(password, minimum_requirement):
 
 
 def main():
-    # INPUT from user
+    # Input from user
     file_with_passwords = input("Enter filename: ")
 
 
