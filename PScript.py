@@ -2,47 +2,41 @@ def password_check(password, minimum_requirement):
     SpecialSym = ['!', '$', '_', '@', '#', '%', '^', '&', '*', '(', ')']
     count = 0
 
-    # DO ALL THE CHECKS
+    # DO ALL CHECKS
     if len(password) < 8:
-        # print('Length should be at least 8')
         pass
     else:
         count += 1
 
     if not any(char.isdigit() for char in password):
-        # print('Password should have at least one numeral')
         pass
     else:
         count += 1
 
     if not any(char.isupper() for char in password):
-        # print('Password should have at least one uppercase letter')
         pass
     else:
         count += 1
 
     if not any(char.islower() for char in password):
-        # print('Password should have at least one lowercase letter')
         pass
     else:
         count += 1
 
     if not any([char in SpecialSym for char in password]):
-        # print("""Password should have at least one of the symbols""")
         pass
     else:
         count += 1
 
     # RETURN
-    # print(password,count)
     if count >= minimum_requirement:
         return True
 
 
 def main():
-    # (1) INPUT from user
+    # INPUT from user
     file_with_passwords = input("Enter filename: ")
-    # print(file_with_passwords)
+
 
     # get list of passwords from file
     passwords = None
